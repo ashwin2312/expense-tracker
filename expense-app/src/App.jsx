@@ -5,7 +5,7 @@ function App() {
     <>
       <div
         style={{
-          backgroundColor: "black",
+          background: "#3B3B3B",
           color: "white",
           height: "100vh",
           width: "96vw",

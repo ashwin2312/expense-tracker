@@ -5,10 +5,16 @@ const Tracker = () => {
   return (
     <div
       style={{
-        background: "grey",
-        width: "95vw",
-        height: "40vh",
+        background: "#626262",
+        width: "1211px",
+        height: "269px",
         display: "flex",
+        gap: "20px",
+        borderRadius: "10px",
+        boxShadow: "0px 4px 4px 0px #00000040",
+        // alignContent: "center",
+        alignItems: "center",
+        justifyContent: "space-evenly",
       }}
     >
       <Balance />
