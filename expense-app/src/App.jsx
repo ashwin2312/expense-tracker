@@ -1,4 +1,6 @@
+import Expenses from "./components/Expenses";
 import Tracker from "./components/Tracker";
+import Transactions from "./components/Transactions";
 
 function App() {
   return (
@@ -12,10 +14,39 @@ function App() {
           padding: "10px",
         }}
       >
-        <p style={{ fontFamily: "Ubuntu", fontWeight: "700" }}>
-          Expense Tracker
-        </p>
-        <Tracker />
+        <div>
+          <p style={{ fontFamily: "Ubuntu", fontWeight: "700" }}>
+            Expense Tracker
+          </p>
+          <Tracker />
+        </div>
+        <div style={{ display: "flex", gap: "40px" }}>
+          <div>
+            <p
+              style={{
+                fontFamily: "Ubuntu",
+                fontWeight: "700",
+                fontStyle: "italic",
+              }}
+            >
+              Recent Transactions
+            </p>
+            <Transactions />
+          </div>
+
+          <div>
+            <p
+              style={{
+                fontFamily: "Ubuntu",
+                fontWeight: "700",
+                fontStyle: "italic",
+              }}
+            >
+              Top Expenses
+            </p>
+            <Expenses />
+          </div>
+        </div>
       </div>
     </>
   );

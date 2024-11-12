@@ -1,6 +1,8 @@
 // import React from 'react'
 import Balance from "./Tracker/Balance";
+import ExpenseChart from "./Tracker/ExpenseChart";
 import ExpensesDisplay from "./Tracker/ExpensesDisplay";
+
 const Tracker = () => {
   return (
     <div
@@ -19,6 +21,7 @@ const Tracker = () => {
     >
       <Balance />
       <ExpensesDisplay />
+      <ExpenseChart />
     </div>
   );
 };
